@@ -1,0 +1,280 @@
+.logo
+{
+    max-width: 120px;
+}
+.barra_pesquisa
+{
+    float: right;
+    margin-top: 55px;
+    margin-right: 25px;
+    display: flex;
+}
+
+.digitar {
+    display: inline;
+    display: flex;
+}
+h1 
+{
+    text-align: center;
+    margin-bottom: 20px;
+}
+h4
+{
+    text-align: center;
+    margin-top: 30px;
+    margin-bottom: 20px;
+}
+.destaque img
+{
+    max-width: 100%;
+}
+.dropdown
+{
+    margin-top: 10px;
+    margin-left: 20px;
+}
+.novidades
+{
+    display: flex;
+    margin-bottom: 3px;
+}
+
+.novidades img
+{
+    
+    max-width: 160px;
+    margin-bottom: 10px;
+   
+    
+}
+.populares a
+{
+    color: white
+}
+.novidades p
+{ 
+    display: inline-block;
+    font-size: larger;
+}
+.novidades p1
+{
+    font-size: larger;
+    display: block;
+}
+.novidades h3 
+{
+    margin-top: 30px;
+}
+
+.menu1
+{
+    position: absolute;
+    top: 50px;
+    margin-left: 10%;
+    display: flex;
+    justify-content: space-between;
+}
+.menu1 a
+{
+    color: white;
+}
+.entrevistas embed
+{
+    max-width: 100%;
+}
+
+.header
+{
+    background-color:rgb(190, 42, 67);
+    margin-bottom: 5px;  
+}
+.main
+{
+    color: white;
+    background-color: black;
+}
+.footer
+{
+    background-color:rgb(190, 42, 67);
+    color: white; 
+    max-width: 100%;
+    text-align: center;
+    
+}
+
+.flogo
+{
+    display: flex;
+    max-width: 50px;
+    margin-left: 1100px;   
+    margin-top: -35px;
+}
+#menuToggle
+{
+    display: none;
+}
+.menu-icon
+{
+    display: none;
+}
+
+/*Media Queries*/
+
+@media screen and (max-width:1200px)
+{
+    .header
+    {
+        position: fixed;
+        top: 0px;
+        max-width: 100% !important;
+        z-index: 999;
+        margin-bottom: 5px;
+    }
+    .container_nav
+    {
+        display: absolute;
+        width: 100%;
+        height: 100%;
+    }
+    .logo
+    {
+        max-width: 100px;
+    }
+    .main
+    {
+        margin-top: 100px;
+    }
+    .menu1
+    {
+        display: flex;
+        position: fixed;
+        flex-wrap: wrap;
+        align-content: center;
+        margin-left: 0px;
+        top: 0px;
+        left: 0px;
+        width: 100%;
+        height: 0%;
+        overflow: hidden;
+       background: rgba(0,0,0,0.7);
+       -webkit-transition: height 0.3s;
+       -moz-transition: height 0.3s;
+       -ms-transition: height 0.3s;
+       -o-transition: height 0.3s;
+       transition: height 0.3s;
+    }
+    .menu1 a
+    {
+        display: block;
+        text-align: center;
+        width: 100%;
+        margin-bottom: 20px;
+        margin-left: 0px;
+        font-size: 1.5em;
+    }
+    .menu-icon
+    {
+        width: 50px;
+        height: inherit;
+        display: block;
+        position: absolute;
+        top: 20px;
+        right:30px;
+        line-height: 40px;
+        color: white;
+        z-index: 999;
+
+    }
+    .menu-icon i 
+    {
+        font-size: 1.5em;
+    }
+    .destaque img
+    {
+        margin-bottom: 10px;
+    }
+
+    #menuToggle:checked ~ label i:nth-child(2)
+    {
+        display: block;
+    }
+    #menuToggle:checked ~ label i:first-child
+    {
+        display: none;
+    }
+    #menuToggle:not(checked) ~ label i:first-child
+    {
+        display: block;
+    }
+    #menuToggle:not(checked) ~ label i:nth-child(2)
+    {
+        display: none;
+    }
+    #menuToggle:checked ~ .nav
+    {
+        height: 100%;
+    }
+    .menu-icon i
+    {
+        font-size: 1.7em;
+    }
+    .main
+    {
+        max-width: 100%;
+    }
+    .flogo
+    {
+        display: none;
+    }
+
+
+    @media screen and (max-width: 470px)
+    {
+        .barra_pesquisa
+        {
+            font-size: smaller;
+        }
+
+        .header
+        {
+            margin-bottom: 5px;
+        }
+        .logo
+        {
+            display: none;
+        }
+        .barra_pesquisa
+        {
+            align-items: center;
+            margin-bottom: 10px;
+        }
+        .main
+        {
+            margin-top: 90px;
+        }
+        
+    }
+    @media screen and (min-width: 471px) and (max-width: 600px)
+    {
+       .header
+        {
+            margin-bottom: 10px;
+        }
+    }
+    @media screen and (max-width: 767px)
+    {
+        .entrevistas embed
+        {
+            align-content: center;
+        }
+    }
+    @media screen and (min-width: 991px) and (max-width: 1200px)
+    {
+        .menu1 align-self: 
+        {
+            font-size: 0.8em;
+        
+        }
+    }
+    
